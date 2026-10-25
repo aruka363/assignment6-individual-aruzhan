@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Assignment - JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript DOM Manipulation & Events</h1>
+        <p>Individual Work - Aruzhan Utarbayeva</p>
+        <p>Group: MT-2504</p>
+    </header>
+
+    <main>
+        <section class="task-section">
+            <h2>Task 6 - Interactive Counter</h2>
+
+            <p>Current Count:</p>
+            <p id="counter-value">0</p>
+
+            <div class="button-group">
+                <button type="button" id="decrease-btn">-</button>
+                <button type="button" id="increase-btn">+</button>
+                <button type="button" id="reset-btn">Reset</button>
+            </div>
+        </section>
+        
+
+<section class="task-section">
+
+    <h2>Task 7 - Live Text Preview</h2>
+
+    <label for="preview-input">Enter your text:</label>
+
+    <textarea
+        id="preview-input"
+        rows="4"
+        placeholder="Type something here..."></textarea>
+
+    <h3>Live Preview:</h3>
+
+    <p id="preview-text" aria-live="polite">
+        Your text will appear here...
+    </p>
+
+    <p>
+        Character Count:
+        <span id="char-count">0</span>
+    </p>
+
+    <button type="button" id="clear-preview">
+        Clear
+    </button>
+
+</section>
+
+<section class="task-section">
+
+    <h2>Task 8 - Image Selector</h2>
+
+    <label for="image-choice">Choose a cat:</label>
+
+    <select id="image-choice">
+        <option value="cat1">Ragdoll Cat</option>
+        <option value="cat2">Sphynx Cat</option>
+        <option value="cat3">Persian Cat</option>
+    </select>
+
+    <figure class="image-display">
+        <img
+            id="selected-image"
+            src="images/cat1.png"
+            alt="Fluffy Ragdoll cat with blue eyes"
+        >
+
+        <figcaption id="image-caption">
+            Ragdoll Cat - Fluffy cat with blue eyes.
+        </figcaption>
+    </figure>
+
+</section>
+
+
+<section class="task-section">
+
+    <h2>Task 9 - Keyboard Events</h2>
+
+    <label for="key-input">Enter your text:</label>
+
+    <input
+        type="text"
+        id="key-input"
+        placeholder="Type something..."
+    >
+
+    <p id="key-display">Last key: None</p>
+
+    <p id="key-result" aria-live="polite">
+        Press Enter to submit or Escape to clear.
+    </p>
+
+</section>
+
+
+<section class="task-section">
+
+    <h2>Task 10 - Mouse and Focus Events</h2>
+
+    <div id="focus-card" tabindex="0">
+
+        <h3>Interactive Card</h3>
+
+        <p id="card-instruction">
+            Hover over this card or focus it using Tab.
+        </p>
+
+    </div>
+
+</section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.task-section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#counter-value {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f6391;
+}
+
+button:focus-visible {
+    outline: 3px solid #f39c12;
+    outline-offset: 3px;
+}
+
+#preview-input {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    min-height: 100px;
+    margin: 15px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#preview-text {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 6px;
+    min-height: 30px;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+#char-count {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+#clear-preview {
+    background-color: #e74c3c;
+}
+
+#clear-preview:hover {
+    background-color: #c0392b;
+}
+
+#key-input {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 15px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#key-display {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+#key-result {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f0f4f8;
+    border-radius: 6px;
+}
+
+
+#focus-card {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 35px 20px;
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#focus-card.active {
+    background-color: #d6eaf8;
+    border-color: #2980b9;
+    transform: scale(1.03);
+}
+
+#focus-card:focus-visible {
+    outline: 3px solid #f39c12;
+    outline-offset: 4px;
+}
+
+#card-instruction {
+    font-size: 16px;
+}
